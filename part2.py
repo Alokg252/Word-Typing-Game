@@ -22,7 +22,7 @@ def check(event):
         f1.write("right")
         f1.close()
         msg.showinfo()
-    
+        
     else:
         msg.showwarning()     
         
