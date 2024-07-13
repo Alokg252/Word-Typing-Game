@@ -46,8 +46,8 @@ def drop(event):
     c = canvas1.create_text(cx,cy,text=chance-1,fill=c_color,font=cf)
 
     canvas1.delete(stext)
-    size = 60
 
+    size = 60
     for i in start:
         s = canvas1.create_text(680,280,text=i,fill="#fc6238",font=f'calibri {size} bold')
         canvas1.update()
