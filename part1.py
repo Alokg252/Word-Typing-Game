@@ -9,26 +9,38 @@ words = open("words.json",'r')
 words = json.loads(words.read())
 
 
+
+# Reading words
+words = open("words.json",'r')
+words = json.loads(words.read())
+
+
+# colors
 colors = ["#00a5e3","#8dd7bf","#ff96c5","#ff5768","#ffbf65","#fc6238","#ffd872","#f2d4cc","#e77577","#ff828b","#e7c582","#00b0ba",
 "#00cdac","#ff6f68","#ffdacc","#ff60ab","#cff800","#ff5c77","#4dd091","#ffec59","#ffa23a",]
 
+# starting coun-down
 start = ["STARTING",'3','2','1','GO']
 
+# root
 root = Tk()
 root.geometry("1920x610+0+0")
 root.title("Fast Typig")
 root.iconbitmap(r"F:\Programing\python\python_codes\Icons\Elegantthemes-Beautiful-Flat-One-Color-Keyboard.ico")
 
+# canvas
 canvas1 = Canvas(root, width=1920 ,height=610, bg="#000000")
 canvas1.create_rectangle(10,10,1348,600,width=10)
 
+# starting text
 stext = canvas1.create_text(680,280,text="Press 'SPACE' to start",fill="#fc6238",font='calibri 50 bold') # starting text
 
+# chance
 cx = 1330 # chance x coordinate
 cy = 540 # chance y coordinate
 cf = "calibri 20 bold" # chance font
 
-
+# droping word function
 def drop(event):
 
     won_flag = 0    
