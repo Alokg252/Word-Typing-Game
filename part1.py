@@ -3,11 +3,10 @@ from tkinter import *
 from time import sleep
 from random import choice
 import tkinter.messagebox as msg
+import json
 
-# Reading words
-words = open("words.txt",'r')
-words = words.read()
-words = words.split(" , ")
+words = open("words.json",'r')
+words = json.loads(words.read())
 
 # colors
 colors = ["#00a5e3","#8dd7bf","#ff96c5","#ff5768","#ffbf65","#fc6238","#ffd872","#f2d4cc","#e77577","#ff828b","#e7c582","#00b0ba",
